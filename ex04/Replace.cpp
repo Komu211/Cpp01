@@ -33,4 +33,6 @@ void Replace::replace()
 		}
 		outFile << line << std::endl;
 	}
+	inFile.close();
+	outFile.close();
 }
