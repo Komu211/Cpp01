@@ -10,4 +10,5 @@ int main(int argc, char **argv)
 	}
 	Replace r(argv[1], argv[2], argv[3]);
 	r.replace();
+	return (0);
 }
