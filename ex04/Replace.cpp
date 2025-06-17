@@ -21,19 +21,17 @@ void Replace::replace()
 	}
 	
 	std::ifstream inFile(_filename);
-	std::ofstream outFile(_filename + ".replace");
 	std::string line;
 
 	if (!inFile.is_open())
 	{
-		std::cout << "Error opening file" << std::endl;
-		if (outFile.is_open())
-			outFile.close();
+		std::cout << "Error opening in file" << std::endl;
 		return;
 	}
+	std::ofstream outFile(_filename + ".replace");
 	if (!outFile.is_open())
 	{
-		std::cout << "Error opening file" << std::endl;
+		std::cout << "Error opening out file" << std::endl;
 		inFile.close();
 		return;
 	}
