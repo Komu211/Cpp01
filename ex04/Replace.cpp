@@ -21,6 +21,14 @@ void Replace::replace()
 	if (!inFile.is_open())
 	{
 		std::cout << "Error opening file" << std::endl;
+		if (outFile.is_open())
+			outFile.close();
+		return;
+	}
+	if (!outFile.is_open())
+	{
+		std::cout << "Error opening file" << std::endl;
+		inFile.close();
 		return;
 	}
 	while (std::getline(inFile, line))
@@ -32,7 +40,9 @@ void Replace::replace()
 			line.insert(pos, _s2);
 			pos = line.find(_s1, pos + _s2.length());
 		}
-		outFile << line << std::endl;
+		outFile << line;
+		if (!inFile.eof())
+			outFile << std::endl;
 	}
 	inFile.close();
 	outFile.close();
