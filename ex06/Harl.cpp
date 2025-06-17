@@ -17,18 +17,13 @@ void Harl::complain(std::string level)
 	{
 		case DEBUG:
 			debug();
-			return;
 		case INFO:
 			info();
-			return;
-		case WARNING:
-			warning();
-			return;
 		case ERROR:
 			error();
-			return;
+			break;
 		default:
-			std::cout << "[ INVALID LEVEL ]" << std::endl;
+			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 	}
 }
 
