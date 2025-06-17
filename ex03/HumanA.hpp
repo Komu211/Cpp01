@@ -1,8 +1,7 @@
-
-#ifndef HUMANA_HPP
-# define HUMANA_HPP
+#pragma once
 
 #include "Weapon.hpp"
+#include <string>
 
 class HumanA
 {
@@ -15,5 +14,3 @@ class HumanA
 		~HumanA();
 		void attack() const;
 };
-
-#endif 

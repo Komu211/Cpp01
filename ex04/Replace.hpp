@@ -1,5 +1,4 @@
-#ifndef REPLACE_HPP
-#define REPLACE_HPP
+#pragma once
 
 #include <string>
 
@@ -17,6 +16,3 @@ public:
 	void replace();
 	~Replace();
 };
-
-
-#endif

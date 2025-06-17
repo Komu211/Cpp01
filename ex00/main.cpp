@@ -6,11 +6,12 @@
 /*   By: kmuhlbau <kmuhlbau@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 12:25:02 by kmuhlbau          #+#    #+#             */
-/*   Updated: 2025/05/12 12:29:18 by kmuhlbau         ###   ########.fr       */
+/*   Updated: 2025/06/17 16:01:37 by kmuhlbau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+#include <iostream>
 
 int main(void)
 {
