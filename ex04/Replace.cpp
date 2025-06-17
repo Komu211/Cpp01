@@ -14,6 +14,12 @@ Replace::~Replace()
 
 void Replace::replace()
 {
+	if (_filename.empty() || _s1.empty())
+	{
+		std::cout << "Error: filename or s1 is empty" << std::endl;
+		return;
+	}
+	
 	std::ifstream inFile(_filename);
 	std::ofstream outFile(_filename + ".replace");
 	std::string line;
