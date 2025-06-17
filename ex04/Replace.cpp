@@ -21,6 +21,7 @@ void Replace::replace()
 	if (!inFile.is_open())
 	{
 		std::cout << "Error opening file" << std::endl;
+		return;
 	}
 	while (std::getline(inFile, line))
 	{
